@@ -11,27 +11,27 @@
     <div>
         <h1>Liste</h1>
         <h2>DPS</h2>
-        <img src="/personnage/bastion.png" alt="bastion" class='portrait'>
-        <img src="/personnage/Genji.png" alt="" class='portrait'>
-        <img src="/personnage/mccree.png" alt="" class='portrait'>
-        <img src="/personnage/mei.png" alt="" class='portrait'>
-        <img src="/personnage/pharah.png" alt="" class='portrait'>
-        <img src="/personnage/reaper.png" alt="" class='portrait'>
-        <img src="/personnage/torbjorn.png" alt="" class='portrait'>
-        <img src="/personnage/symmetra.png" alt="" class='portrait'>
-        <img src="/personnage/tracer.png" alt="" class='portrait'>
-        <img src="/personnage/widowmaker.png" alt="" class='portrait'>
+        <img src="/personnage/bastion.png" alt="bastion" class='dps'>
+        <img src="/personnage/Genji.png" alt="" class='dps'>
+        <img src="/personnage/mccree.png" alt="" class='dps'>
+        <img src="/personnage/mei.png" alt="" class='dps'>
+        <img src="/personnage/pharah.png" alt="" class='dps'>
+        <img src="/personnage/reaper.png" alt="" class='dps'>
+        <img src="/personnage/torbjorn.png" alt="" class='dps'>
+        <img src="/personnage/symmetra.png" alt="" class='dps'>
+        <img src="/personnage/tracer.png" alt="" class='dps'>
+        <img src="/personnage/widowmaker.png" alt="" class='dps'>
 
         <h2>Support</h2>
-        <img src="/personnage/mercy.png" alt="" class='portrait'>
-        <img src="/personnage/zenyatta.png" alt="" class='portrait'>
+        <img src="/personnage/mercy.png" alt="" class='supp'>
+        <img src="/personnage/zenyatta.png" alt="" class='supp'>
 
         <h2>Tank</h2>
-        <img src="/personnage/dva.png" alt="" class='portrait'>
-        <img src="/personnage/reinhardt.png" alt="" class='portrait'>
-        <img src="/personnage/roadhog.png" alt="reaper" class='portrait'>
-        <img src="/personnage/winston.png" alt="" class='portrait'>
-        <img src="/personnage/Zarya.png" alt="" class='portrait'>
+        <img src="/personnage/dva.png" alt="" class='tank'>
+        <img src="/personnage/reinhardt.png" alt="" class='tank'>
+        <img src="/personnage/roadhog.png" alt="reaper" class='tank'>
+        <img src="/personnage/winston.png" alt="" class='tank'>
+        <img src="/personnage/Zarya.png" alt="" class='tank'>
 
     </div>
 
@@ -40,19 +40,7 @@
     </div>
 
 
-    <script>
-        let banList = [];
-        let test = document.getElementsByClassName('portrait')
-
-        for (let i = 0; i < test.length; i++) {
-            test[i].addEventListener("click", e => {
-                banList.push(e.target);
-                e.target.style.display = "none";
-                console.log(e.target);
-                document.getElementById('ban-list').innerHTML += `<img src='${e.target.src}' alt='${e.target.alt}' >`
-            })
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
